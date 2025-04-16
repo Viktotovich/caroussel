@@ -1,5 +1,5 @@
 import "./App.css";
-import C1 from "./assets/caroussels/C1";
+import C1 from "./caroussels/C1";
 
 const App = () => {
   return (
