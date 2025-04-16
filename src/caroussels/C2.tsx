@@ -17,7 +17,9 @@ const C2 = () => {
         <div id="carrousel">
           <h2>Jibber Jabber</h2>
           <div id="card-container">
-            <button className="mr-5">&lt;</button>
+            <button className="mr-5" id="left">
+              &lt;
+            </button>
             {fakeData.map((data, index) => {
               return (
                 <div
@@ -30,7 +32,7 @@ const C2 = () => {
                 </div>
               );
             })}
-            <button>&gt;</button>
+            <button id="right">&gt;</button>
           </div>
         </div>
       </div>

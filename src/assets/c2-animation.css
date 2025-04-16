@@ -4,6 +4,7 @@
   margin-top: 20px;
   margin-bottom: 50px;
   background-color: aliceblue;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -15,13 +16,14 @@ h2 {
 #card-container {
   display: flex;
   padding: 8rem 3rem;
+  position: relative;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 7rem;
   margin-right: 4rem;
   border: 2px solid black;
   border-radius: 15px;
@@ -48,4 +50,32 @@ h2 {
 
 button:hover {
   cursor: pointer;
+}
+
+#left,
+#right {
+  position: relative;
+  z-index: 1;
+  display: inline;
+  font-size: 3rem;
+}
+
+#left {
+  left: 20%;
+  top: 30px;
+}
+
+#right {
+  right: 20%;
+  top: 30px;
+}
+
+#right:active {
+  transform: translateX(20px);
+  transition: transform 0.2s ease-out;
+}
+
+#left:active {
+  transform: translateX(-20px);
+  transition: transform 0.2s ease-out;
 }
